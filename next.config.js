@@ -6,6 +6,7 @@
 //   },
 // };
 const nextConfig = {
+  distDir: "dist",
   reactStrictMode: false, // Disabling Strict Mode
   images: {
     remotePatterns: [
@@ -13,7 +14,6 @@ const nextConfig = {
         protocol: "https",
         hostname: "images.pexels.com",
         pathname: "/**",
-        distDir: "build",
       },
     ],
   },
