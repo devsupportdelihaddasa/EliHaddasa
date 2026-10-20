@@ -1,3 +1,4 @@
 # Ignore node_modules and distribution directories
 node_modules/
 dist/
+.vercel
