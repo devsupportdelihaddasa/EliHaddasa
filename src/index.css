@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-ink-600/60;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    background-color: #0a0c0e;
+  }
+
+  ::selection {
+    background-color: #0EA5E9;
+    color: #0a0c0e;
+  }
+
+  :focus-visible {
+    outline: 2px solid #0EA5E9;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-widest2 text-sky-500;
+  }
+
+  .section-shell {
+    @apply mx-auto w-full max-w-[1440px] px-6 md:px-10 lg:px-16;
+  }
+
+  .hairline {
+    @apply border border-white/10;
+  }
+
+  .tap-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  .corner-frame {
+    position: relative;
+  }
+  .corner-frame::before,
+  .corner-frame::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-color: #0EA5E9;
+    z-index: 10;
+    transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1), height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .corner-frame::before {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+  }
+  .corner-frame::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+  }
+  .corner-frame:hover::before,
+  .corner-frame:hover::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* --- Scroll reveal system ------------------------------------------- */
+  /* Default: fade + translate up. Toggled by useScrollReveal via .is-visible */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Subtle variant: fade + tiny lift, for secondary/metadata elements */
+  .reveal-fade {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal-fade.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Scale variant: gentle scale-in, for image frames and feature tiles */
+  .reveal-scale {
+    opacity: 0;
+    transform: scale(0.96);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal-scale.is-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Mask/clip reveal: for imagery, sweeps into view */
+  .reveal-mask {
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal-mask.is-visible {
+    clip-path: inset(0 0 0% 0);
+  }
+
+  /* Staggered children: container gets .is-visible, children animate in sequence */
+  .reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal-stagger.is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0ms; }
+  .reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 70ms; }
+  .reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 140ms; }
+  .reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 210ms; }
+  .reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 280ms; }
+  .reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 350ms; }
+  .reveal-stagger.is-visible > *:nth-child(7) { transition-delay: 420ms; }
+  .reveal-stagger.is-visible > *:nth-child(8) { transition-delay: 490ms; }
+
+  /* --- Hero entrance (keyframe-driven, runs automatically on mount) ---- */
+  .hero-in {
+    animation: heroUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .hero-in-1 { animation-delay: 0.05s; }
+  .hero-in-2 { animation-delay: 0.18s; }
+  .hero-in-3 { animation-delay: 0.32s; }
+  .hero-in-4 { animation-delay: 0.46s; }
+  .hero-in-5 { animation-delay: 0.6s; }
+  .hero-in-6 { animation-delay: 0.72s; }
+
+  /* --- Buttons ----------------------------------------------------------- */
+  .btn-press {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, border-color 0.3s ease,
+      color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .btn-press:hover {
+    transform: translateY(-2px);
+  }
+  .btn-press:active {
+    transform: translateY(0) scale(0.97);
+  }
+}
+
+@layer utilities {
+  .bg-circuit {
+    background-image:
+      linear-gradient(rgba(244, 243, 238, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(244, 243, 238, 0.06) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+}
