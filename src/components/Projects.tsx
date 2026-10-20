@@ -27,7 +27,7 @@ const circularWaterNetworksustainabilityMetrics = [
   {
     id: "1",
     title: "Water Recycling Rate",
-    value: 92,
+    value: 0,
     unit: "%",
     description:
       "All agricultural and industrial processing wastewater is safely captured, purified, and repurposed",
@@ -36,7 +36,7 @@ const circularWaterNetworksustainabilityMetrics = [
   {
     id: "2",
     title: "Dams Constructed & Rehabilitated",
-    value: 3,
+    value: 0,
     unit: "",
     description:
       "Ecosystem Micro-Dams engineered to stabilize water tables and secure local smallholder agricultural irrigation.",
@@ -47,7 +47,7 @@ const circularWaterNetworksustainabilityMetrics = [
   {
     id: "3",
     title: "Total Recycled Volume",
-    value: 100,
+    value: 0,
     unit: "%",
     description:
       "Water utilized across our operational processing packhouses is routed through closed-loop recycling networks",
@@ -62,7 +62,7 @@ const renewablenergyandlowcarbonfootprintsustainabilityMetrics = [
   {
     id: "1",
     title: "Renewable Energy Usage",
-    value: 100,
+    value: 0,
     unit: "%",
     description:
       "Eli Haddasa localized storage facilities, processing hubs, and sports camps run completely off-grid",
@@ -71,7 +71,7 @@ const renewablenergyandlowcarbonfootprintsustainabilityMetrics = [
   {
     id: "2",
     title: "Clean Operations",
-    value: 4,
+    value: 0,
     unit: "",
     description:
       "Major Facilities powered directly by our on-site solar micro-grid infrastructures.",
@@ -80,7 +80,7 @@ const renewablenergyandlowcarbonfootprintsustainabilityMetrics = [
   {
     id: "3",
     title: "Carbon Emissions Reduction",
-    value: 42,
+    value: 0,
     unit: "%",
     description:
       "Reduction in projected operational CO₂ emissions compared to traditional, grid-tied industrial and logistics frameworks since initial site planning.",
@@ -95,7 +95,7 @@ const sportsinfrastructureandtribalpeaceaccordssustainabilityMetrics = [
   {
     id: "1",
     title: "Stadiums & Eco-Arenas Built",
-    value: 1,
+    value: 0,
     unit: "",
     description:
       "Flagship Multi-Sport Indoor Eco-Complex successfully launched to host regional futsal and tennis tournaments.",
@@ -104,7 +104,7 @@ const sportsinfrastructureandtribalpeaceaccordssustainabilityMetrics = [
   {
     id: "2",
     title: "Tribal Restorations & Accords",
-    value: 2,
+    value: 0,
     unit: "",
     description:
       "Bordering Communities Stabilized. By bringing traditional councils together into joint-venture equity structures, we have permanently replaced historic boundary disputes with shared corporate profits.",
@@ -120,7 +120,7 @@ const humanitarianprotectionandlandRenewalsustainabilityMetrics = [
   {
     id: "1",
     title: "Shelters Provided",
-    value: 1,
+    value: 0,
     unit: "",
     description:
       "Safe Haven Village Anchor fully constructed, providing secure physical, psychological, and vocational sanctuary slots for survivors of abuse.",
@@ -129,7 +129,7 @@ const humanitarianprotectionandlandRenewalsustainabilityMetrics = [
   {
     id: "2",
     title: "Lands Renewed & Rehabilitated",
-    value: 1500,
+    value: 0,
     unit: "",
     description:
       "Hectares of degraded, over-farmed, or neglected soil actively restored into highly productive agro-industrial parks and organic food zones.",
@@ -138,7 +138,7 @@ const humanitarianprotectionandlandRenewalsustainabilityMetrics = [
   {
     id: "3",
     title: "Total Habitat Restored",
-    value: 250,
+    value: 0,
     unit: "",
     description:
       "Hectares of core boundary land re-established exclusively as natural, secure wildlife habitats and indigenous sanctuaries.",
@@ -154,7 +154,7 @@ const localisedemploymentandcommunityinvestmentsustainabilityMetrics = [
   {
     id: "1",
     title: "Local Workforce Percentage",
-    value: 88,
+    value: 0,
     unit: "%",
     description:
       "Of our total operational workforce is hired directly from the immediate township and rural communities surrounding our project nodes.",
@@ -163,7 +163,7 @@ const localisedemploymentandcommunityinvestmentsustainabilityMetrics = [
   {
     id: "2",
     title: "Rural Communities Developed",
-    value: 3,
+    value: 0,
     unit: "",
     description:
       "Key Municipal Zones systematically advanced through solar electrification, digital tech labs, and wastewater infrastructure.",
@@ -172,7 +172,7 @@ const localisedemploymentandcommunityinvestmentsustainabilityMetrics = [
   {
     id: "3",
     title: "Community Investment Margin",
-    value: 10,
+    value: 0,
     unit: "%",
     description:
       "Corporate Gross Equity permanently ring-fenced inside our independent local Community Trusts.",
@@ -185,21 +185,21 @@ const environmentalCommitments = [
     title: "Net-Zero Industrial Circularity Plan",
     description:
       "Eliminating raw manufacturing waste across all localized processing and storage loops by transforming 100% of cosmetic organic byproducts into essential cosmetic oil compounds.",
-    progress: 75,
+    progress: 0,
     target: "2030",
   },
   {
     title: "Closed-Loop Regional Water Security Mandate",
     description:
       "Deploying decentralized wastewater networks across our out-grower agricultural lines to guarantee that zero synthetic industrial runoff ever touches Limpopo’s natural groundwater table.",
-    progress: 85,
+    progress: 0,
     target: "2030",
   },
   {
     title: "Solar Grid SADC Scaling Initiative",
     description:
       "Replicating our off-grid solar micro-grid blueprints across 10 separate transit corridors over the next 36 months to provide clean utility backup for global storage-as-a-service (STaaS) clients.",
-    progress: 35,
+    progress: 0,
     target: "2030",
   },
   //   {

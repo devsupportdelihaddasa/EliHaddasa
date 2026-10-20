@@ -247,7 +247,7 @@ function GlobalSupplyRow({ globalsupply }: { globalsupply: GlobalSupplyItem }) {
         <div className="text-sm text-gray-500 mb-2">
           {globalsupply.complianceCertifications}
         </div>
-        <Button as="a" href="#" variant="primary">
+        <Button as="a" href="#contact" variant="primary">
           Inquire
         </Button>
       </div>

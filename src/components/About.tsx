@@ -174,7 +174,7 @@ export function About() {
             corporate social responsibility to an ordained, higher calling.
           </p>
           <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-black">
-            In its truest sense, Eli Haddassa does not mean a passive wish for
+            In its truest sense, Eli Haddasa does not mean a passive wish for
             change. It is an active, heavy-lifting divine mandate to:
           </p>
           <div

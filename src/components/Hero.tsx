@@ -109,7 +109,7 @@ export function Hero() {
 
           <div className="hero-in hero-in-6 hairline absolute bottom-6 left-6 z-10 hidden w-48 bg-green-200/95 p-4 backdrop-blur-sm sm:block">
             <p className="font-mono text-[10px] uppercase tracking-widest2 text-sky-500">
-              05 Dec 2026
+              TBC Dec 2026
             </p>
             <p className="mt-1 text-xs leading-relaxed text-black">
               Football Fundathon - Fintech CEO's vs Saas CEO's
