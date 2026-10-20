@@ -6,7 +6,7 @@
 //   },
 // };
 const nextConfig = {
-  distDir: "dist",
+  distDir: "build",
   reactStrictMode: false, // Disabling Strict Mode
   images: {
     remotePatterns: [
