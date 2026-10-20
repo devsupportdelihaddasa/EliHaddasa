@@ -223,7 +223,7 @@ function GlobalSupplyRow({ globalsupply }: { globalsupply: GlobalSupplyItem }) {
       </div>
       <div className="flex items-center gap-4 transition-transform duration-300 ease-premium group-hover:translate-x-1 group-focus-visible:translate-x-1 sm:col-span-4">
         <h4 className="text-sm font-semibold text-bone mb-2">
-          Featured Creative Catalysts & Knowledge Architects:
+          Featured Creative Catalysts And Knowledge Architects:
         </h4>
 
         <div className="text-sm text-gray-500 mb-2">
