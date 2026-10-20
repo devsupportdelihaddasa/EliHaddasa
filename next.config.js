@@ -6,7 +6,7 @@
 //   },
 // };
 const nextConfig = {
-  distDir: "build",
+  distDir: "vite build",
   reactStrictMode: false, // Disabling Strict Mode
   images: {
     remotePatterns: [
