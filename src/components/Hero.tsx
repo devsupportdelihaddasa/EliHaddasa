@@ -102,17 +102,17 @@ export function Hero() {
 
             <div className="hero-in hero-in-6 absolute bottom-4 right-4 border border-sky-500/15 bg-sky-500/70 px-3 py-1.5 backdrop-blur-sm">
               <span className="font-mono text-[10px] uppercase tracking-widest2 text-bone">
-                Football&nbsp;/&nbsp;Indoor
+                Soccer&nbsp;/&nbsp;Indoor
               </span>
             </div>
           </div>
 
           <div className="hero-in hero-in-6 hairline absolute bottom-6 left-6 z-10 hidden w-48 bg-green-200/95 p-4 backdrop-blur-sm sm:block">
             <p className="font-mono text-[10px] uppercase tracking-widest2 text-sky-500">
-              TBC Dec 2026
+              5th Dec 2026
             </p>
             <p className="mt-1 text-xs leading-relaxed text-black">
-              Football Fundathon - Fintech CEO's vs Saas CEO's
+              Indoor Soccer Fundathon - Gauteng vs. Limpopo Corporate Tech Derby
             </p>
           </div>
         </div>
