@@ -86,7 +86,7 @@ export const arenadashboard: ArenaDashboardItem[] = [
     location: 'TBC',
     eventdate: 'Saturday, December 5th, 2026 at 10:00 SAST',
     eventdescription:
-       "High-stakes corporate indoor soccer showdown pitching prominent South African tech executives and venture capitalists head-to-head for rural digital infrastructure.",
+       "High-stakes corporate indoor soccer showdown between South African Gauteng based and Limpopo tech executives and venture capitalists head-to-head for rural digital infrastructure.",
     image: 'https://images.unsplash.com/photo-1785528469340-19d53f284d29?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D=crop',
   
     projectconceptandeventdetailedDescription:
